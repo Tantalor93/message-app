@@ -28,7 +28,7 @@ public class MessageController {
         ListenableFuture<SendResult<String, String>> test = kafkaTemplate.send(
                 "test",
                 "message-app" + now,
-                "benky" + (now % 99)
+                "ping" + now
         );
 
         SendResult<String, String> stringStringSendResult = test.get();
