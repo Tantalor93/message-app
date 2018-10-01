@@ -25,9 +25,9 @@ public class MessageController {
 
         long now = System.currentTimeMillis();
 
-        ListenableFuture<SendResult<String, String>> test = kafkaTemplate.send(
+        final ListenableFuture<SendResult<String, String>> test = kafkaTemplate.send(
                 "test",
-                "message-app" + now,
+                "message-app-" + now,
                 "ping" + now
         );
 
