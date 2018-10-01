@@ -1,0 +1,9 @@
+{
+  "message": {
+    "producer": {
+      "type": "scheduled",
+      "identifier": "test"
+    },
+    "message": "test message"
+  }
+}
